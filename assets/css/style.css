@@ -3,3 +3,59 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    --corbranca: white;
+    --corpreta: black;
+}
+body {
+    background: black url(../img/HD\ wallpaper_\ Hogwarts\ Legacy\,\ video\ games\,\ dragon\,\ owl\,\ Harry\ Potter\,\ birds.jpeg) top center no-repeat fixed;
+    background-size: 100vw;
+    z-index: -1;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+}
+header ul, header a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    margin: auto;
+    gap: 2em;
+    color: var(--corbranca);
+}
+header img {
+    height: 50px;
+    margin-top: 5px;
+}
+.header-imgs {
+    display: flex;
+    gap: 1.5em;
+}
+.inicio{
+    height: 100vh;
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+.inicio h1, p {
+    color: var(--corbranca);
+}
+.inicio a {
+    background-color: yellow;
+    text-decoration: none;
+    color: var(--corpreta);
+    padding: .5em;
+}
+.container-inicio {
+    margin-top: 200px;
+}
+.inicio-introducao {
+    padding: 2em;
+    margin: auto;
+}
