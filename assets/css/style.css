@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -6,11 +8,14 @@
 :root {
     --corbranca: white;
     --corpreta: black;
+    --fonte-aboreto: 'Aboreto', cursive;
+    --fonte-bebas: 'Bebas Neue', cursive;
 }
 body {
     background: black url(../img/HD\ wallpaper_\ Hogwarts\ Legacy\,\ video\ games\,\ dragon\,\ owl\,\ Harry\ Potter\,\ birds.jpeg) top center no-repeat fixed;
     background-size: 100vw;
     z-index: -1;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header {
     display: flex;
@@ -36,24 +41,33 @@ header img {
     gap: 1.5em;
 }
 .inicio{
-    height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 110px);
     max-width: 800px;
     margin: auto;
-    justify-content: center;
     text-align: center;
 }
-.inicio h1, p {
+.inicio h1 {
     color: var(--corbranca);
+    font-size: 5rem;
+    font-family: var(--fonte-bebas);
+    letter-spacing: 7px;
+    text-shadow: black 2px 2px 120px;
+}
+.inicio p {
+    color: var(--corbranca);
+    text-shadow: black 2px 2px 15px;
 }
 .inicio a {
     background-color: yellow;
     text-decoration: none;
     color: var(--corpreta);
-    padding: .5em;
+    padding: 1em;
 }
 .container-inicio {
-    margin-top: 200px;
+
 }
 .inicio-introducao {
     padding: 2em;
