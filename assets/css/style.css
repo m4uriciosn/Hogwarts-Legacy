@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 * {
     padding: 0;
@@ -14,10 +15,11 @@
     --fonte-aboreto: 'Aboreto', cursive;
     --fonte-bebas: 'Bebas Neue', cursive;
     --fonte-warp: 'Tilt Warp', cursive;
+    --fonte-script: 'Dancing Script', cursive;
 }
 
 body {
-    background: black url(../img/HD\ wallpaper_\ Hogwarts\ Legacy\,\ video\ games\,\ dragon\,\ owl\,\ Harry\ Potter\,\ birds.jpeg) top center no-repeat fixed;
+    background: black url(../img/HD\ wallpaper_\ Hogwarts\ Legacy\,\ video\ games\,\ dragon\,\ owl\,\ Harry\ Potter\,\ birds.jpeg) top center no-repeat scroll;
     background-size: 100vw;
     z-index: -1;
     font-family: Arial, Helvetica, sans-serif;
@@ -41,6 +43,9 @@ header ul, header a {
     cursor: pointer;
     font-family: var(--fonte-warp);
 }
+header nav {
+    margin: auto;
+}
 header a:hover {
     color: var(--coramarela);
 }
@@ -56,10 +61,11 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 55px);
+    height: calc(100vh - 110px);
     max-width: 800px;
     margin: auto;
     text-align: center;
+    margin-bottom: 55px;
 }
 .inicio h1 {
     color: var(--corbranca);
@@ -86,12 +92,12 @@ header img {
     margin: auto;
 }
 .sobre {
-    padding-top: 55px;
+    padding: 55px 0;
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    height: calc(100vh - 55px);
-    background-color: var(--corbranca);
+    background: var(--corbranca) url(../img/download\ \(3\).jpeg) center center repeat scroll;
+    background-size: 100vw;
 }
 .container-sobre {
     max-width: 1000px;
@@ -110,6 +116,11 @@ header img {
 .info-sobre h1 {
     font-family: var(--fonte-bebas);
     font-size: 4rem;
+}
+.info-sobre p {
+    font-family: var(--fonte-script);
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 .ancora-info {
     padding-top: 2em;
