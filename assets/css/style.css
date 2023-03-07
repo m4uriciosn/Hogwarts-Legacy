@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -8,9 +10,12 @@
 :root {
     --corbranca: white;
     --corpreta: black;
+    --coramarela: yellow;
     --fonte-aboreto: 'Aboreto', cursive;
     --fonte-bebas: 'Bebas Neue', cursive;
+    --fonte-warp: 'Tilt Warp', cursive;
 }
+
 body {
     background: black url(../img/HD\ wallpaper_\ Hogwarts\ Legacy\,\ video\ games\,\ dragon\,\ owl\,\ Harry\ Potter\,\ birds.jpeg) top center no-repeat fixed;
     background-size: 100vw;
@@ -20,8 +25,9 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
+    z-index: 100;
 }
 header ul, header a {
     display: flex;
@@ -31,6 +37,12 @@ header ul, header a {
     margin: auto;
     gap: 2em;
     color: var(--corbranca);
+    transition: all .3s;
+    cursor: pointer;
+    font-family: var(--fonte-warp);
+}
+header a:hover {
+    color: var(--coramarela);
 }
 header img {
     height: 50px;
@@ -44,7 +56,7 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 55px);
     max-width: 800px;
     margin: auto;
     text-align: center;
@@ -62,16 +74,43 @@ header img {
     font-family: var(--fonte-aboreto);
     font-size: .9rem;
 }
-.inicio a {
-    background-color: yellow;
+.btn-amarelo {
+    background-color: var(--coramarela);
     text-decoration: none;
     color: var(--corpreta);
+    font-family: var(--fonte-warp);
     padding: 1em;
-}
-.container-inicio {
-
 }
 .inicio-introducao {
     padding: 2em;
     margin: auto;
+}
+.sobre {
+    padding-top: 55px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: calc(100vh - 55px);
+    background-color: var(--corbranca);
+}
+.container-sobre {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.imagem {
+    height: 30em;
+}
+.info-sobre {
+    max-width: 400px;
+    justify-content: space-evenly;
+}
+.info-sobre h1 {
+    font-family: var(--fonte-bebas);
+    font-size: 4rem;
+}
+.ancora-info {
+    padding-top: 2em;
 }
