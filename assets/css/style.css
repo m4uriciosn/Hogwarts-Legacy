@@ -53,12 +53,14 @@ header img {
     color: var(--corbranca);
     font-size: 5rem;
     font-family: var(--fonte-bebas);
-    letter-spacing: 7px;
+    letter-spacing: 10px;
     text-shadow: black 2px 2px 120px;
 }
 .inicio p {
     color: var(--corbranca);
-    text-shadow: black 2px 2px 15px;
+    text-shadow: black 3px 3px 13px;
+    font-family: var(--fonte-aboreto);
+    font-size: .9rem;
 }
 .inicio a {
     background-color: yellow;
