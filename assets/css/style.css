@@ -17,9 +17,11 @@
     --fonte-warp: 'Tilt Warp', cursive;
     --fonte-script: 'Dancing Script', cursive;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
-    background: black url(../img/HD\ wallpaper_\ Hogwarts\ Legacy\,\ video\ games\,\ dragon\,\ owl\,\ Harry\ Potter\,\ birds.jpeg) top center no-repeat scroll;
+    background: black url(../img/HD\ wallpaper_\ Hogwarts\ Legacy\,\ video\ games\,\ dragon\,\ owl\,\ Harry\ Potter\,\ birds.jpeg) top center no-repeat fixed;
     background-size: 100vw;
     z-index: -1;
     font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +31,6 @@ header {
     justify-content: space-between;
     max-width: 1000px;
     margin: auto;
-    z-index: 100;
 }
 header ul, header a {
     display: flex;
@@ -52,6 +53,10 @@ header a:hover {
 header img {
     height: 50px;
     margin-top: 5px;
+    transition: all .5s;
+}
+header img:hover {
+    scale: .9;
 }
 .header-imgs {
     display: flex;
@@ -87,31 +92,43 @@ header img {
     font-family: var(--fonte-warp);
     padding: 1em;
 }
+.btn-amarelo:hover {
+    background-color: rgb(211, 211, 0);
+}
 .inicio-introducao {
     padding: 2em;
     margin: auto;
 }
 .sobre {
-    padding: 55px 0;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    background: var(--corbranca) url(../img/download\ \(3\).jpeg) center center repeat scroll;
-    background-size: 100vw;
-}
-.container-sobre {
-    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    padding: 55px 0;
+    background: var(--corbranca) url(../img/download\ \(3\).jpeg) top center repeat scroll;
+    background-size: 100vw;
+    height: 100vh;
+}
+.sobre div {
+    margin: auto;
+}
+.container-sobre {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    max-width: 1000px;
+    margin: auto;
 }
 .imagem {
     height: 30em;
+    border: 20px solid black ;
 }
 .info-sobre {
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 .info-sobre h1 {
     font-family: var(--fonte-bebas);
@@ -124,4 +141,8 @@ header img {
 }
 .ancora-info {
     padding-top: 2em;
+}
+.testes {
+    background-color: rgba(0, 0, 0, 0.700);
+    display: flex;
 }
