@@ -16,6 +16,8 @@
     --fonte-bebas: 'Bebas Neue', cursive;
     --fonte-warp: 'Tilt Warp', cursive;
     --fonte-script: 'Dancing Script', cursive;
+    --tamanho-img-cards: 250px;
+    --tamamhp-img-cards-1024px: 200px;
 }
 html {
     scroll-behavior: smooth;
@@ -138,5 +140,40 @@ header img:hover {
 }
 .testes {
     background-color: rgba(0, 0, 0, 0.700);
+}
+.container-titulo {
+    text-align: center;
+    color: var(--corbranca);
+    font-family: var(--fonte-bebas);
+    font-size: 3rem;
+    padding: 2em 0;
+}
+.cards-testes {
+    max-width: 1000px;
+    margin: auto;
     display: flex;
+    justify-content: space-between;
+}
+.card-hp{
+    position: relative;
+    max-width: var(--tamanho-img-cards);
+}
+.card-hp-div{
+    position: relative;
+}
+.img-card {
+    width: var(--tamanho-img-cards);
+}
+.card-hp h2 {
+    position: absolute;
+    color: var(--corbranca);
+    bottom: 1em;
+    left: .8em;
+    font-family: var(--fonte-aboreto);
+    text-shadow: black 2px 2px 5px;
+}
+.card-hp p {
+    font-family: var(--fonte-aboreto);
+    color: var(--corbranca);
+
 }
