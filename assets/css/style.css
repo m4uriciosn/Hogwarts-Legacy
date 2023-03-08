@@ -153,6 +153,7 @@ header img:hover {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 3em;
 }
 .card-hp{
     position: relative;
@@ -160,6 +161,10 @@ header img:hover {
 }
 .card-hp-div{
     position: relative;
+    transition: all .5s;
+}
+.card-hp-div:hover {
+    scale: 1.05;
 }
 .img-card {
     width: var(--tamanho-img-cards);
@@ -175,5 +180,6 @@ header img:hover {
 .card-hp p {
     font-family: var(--fonte-aboreto);
     color: var(--corbranca);
-
+    padding: .7em;
+    text-align: start;
 }
