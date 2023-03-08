@@ -91,6 +91,7 @@ header img:hover {
     color: var(--corpreta);
     font-family: var(--fonte-warp);
     padding: 1em;
+    transition: all .3s;
 }
 .btn-amarelo:hover {
     background-color: rgb(211, 211, 0);
@@ -100,17 +101,10 @@ header img:hover {
     margin: auto;
 }
 .sobre {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: auto;
-    padding: 55px 0;
-    background: var(--corbranca) url(../img/download\ \(3\).jpeg) top center repeat scroll;
+    padding: 10em 0;
+    background: var(--corbranca) url(../img/download\ \(3\).jpeg) left bottom repeat scroll;
     background-size: 100vw;
-    height: 100vh;
-}
-.sobre div {
-    margin: auto;
 }
 .container-sobre {
     display: flex;
