@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap');
 
 * {
     padding: 0;
@@ -16,6 +17,7 @@
     --fonte-bebas: 'Bebas Neue', cursive;
     --fonte-warp: 'Tilt Warp', cursive;
     --fonte-script: 'Dancing Script', cursive;
+    --fonte-pt-caption: 'PT Serif Caption', serif;
     --tamanho-img-cards: 250px;
     --tamamhp-img-cards-1024px: 200px;
 }
@@ -139,7 +141,8 @@ header img:hover {
     padding-top: 2em;
 }
 .testes {
-    background-color: rgba(0, 0, 0, 0.700);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9094012605042017) 10%, rgba(0,0,0,0.7469362745098039) 30%, rgba(0,0,0,0.5816701680672269) 100%);
 }
 .container-titulo {
     text-align: center;
@@ -178,8 +181,57 @@ header img:hover {
     text-shadow: black 2px 2px 5px;
 }
 .card-hp p {
-    font-family: var(--fonte-aboreto);
+    font-family: var(--fonte-pt-caption);
     color: var(--corbranca);
     padding: .7em;
     text-align: start;
+}
+.info {
+    background-color: var(--corpreta);
+    padding: 4em 0;
+}
+.div-divisoria {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 1000px;
+}
+.divisoria {
+    width: 100%;
+}
+.info-container {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 4em 0;
+}
+.info-img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 3em;
+}
+.imagem-hogwarts {
+    width: 70%;
+    margin: auto;
+}
+.info-container p {
+    color: var(--corbranca);
+    text-align: center;
+}
+footer {
+    background-color: var(--corpreta);
+    height: 2em;
+}
+footer p, footer a {
+    text-decoration: none;
+    color: var(--corbranca);
+    text-align: center;
+    font-family: var(--fonte-aboreto);
+    transition: all .5s;
+}
+footer a:hover {
+    color: var(--coramarela);
 }
