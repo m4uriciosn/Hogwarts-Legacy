@@ -1,0 +1,79 @@
+
+@media (max-width: 1024px) {
+    body {
+        background-size: 150vw;
+    }
+    .container-sobre {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .imagem {
+        height: 20rem;
+    }
+    .container-titulo{
+        font-size: 2.5rem;
+    }
+    .cards-testes{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .card-hp, .img-card{
+        width: var(--tamamho-img-cards-1024px);
+    }
+    .info-container p {
+        max-width: 80vw;
+        margin: auto;
+    }
+}
+@media (max-width: 755px){
+    .container-sobre, .cards-testes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-card {
+        width: var(--tamanho-img-cards);
+    }
+    .card-hp{
+        width: var(--tamanho-img-cards);
+        margin-bottom: 2em;
+    }
+    .container-titulo{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 700px) {
+    header ul, header a, header, .header-imgs {
+        text-align: center;
+        flex-direction: column;
+    }
+    header {
+        display: none;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        z-index: 1001;
+    }
+    .menu-mobile {
+        display: block;
+        right: 0;
+    }
+    .ativo {
+        display: flex;
+    }
+    .remove-img{
+        display: none;
+    }
+    .inicio {
+        height: 100vh;
+    }
+    .info-sobre h1, .info-sobre p {
+        text-align: center;
+    }
+}
+@media (orientation: portrait) {
+    body{
+        background: black url(../img/HD\ wallpaper_\ Hogwarts\ Legacy\,\ video\ games\,\ dragon\,\ owl\,\ Harry\ Potter\,\ birds.jpeg) center center no-repeat fixed;
+        background-size: 500vw;
+    }
+}

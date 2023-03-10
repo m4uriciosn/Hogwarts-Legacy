@@ -16,3 +16,14 @@ botaoFechar.addEventListener("click", () => {
     AlternarModal();
     video.setAttribute("src", "");
 });
+
+const botao = document.getElementById('botao-responsivo')
+const menu = document.querySelector("#menu")
+
+function ativamenu() {
+    menu.classList.toggle("ativo")
+}
+
+botao.addEventListener("click", ()=>{
+    ativamenu()
+})

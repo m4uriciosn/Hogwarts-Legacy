@@ -19,7 +19,7 @@
     --fonte-script: 'Dancing Script', cursive;
     --fonte-pt-caption: 'PT Serif Caption', serif;
     --tamanho-img-cards: 250px;
-    --tamamhp-img-cards-1024px: 200px;
+    --tamamho-img-cards-1024px: 200px;
 }
 html {
     scroll-behavior: smooth;
@@ -47,6 +47,7 @@ header ul, header a {
     transition: all .3s;
     cursor: pointer;
     font-family: var(--fonte-warp);
+    letter-spacing: 2px;
 }
 header nav {
     margin: auto;
@@ -65,6 +66,19 @@ header img:hover {
 .header-imgs {
     display: flex;
     gap: 1.5em;
+}
+.menu-mobile {
+    cursor: pointer;
+    display: none;
+    background-color: black;
+    position: fixed;
+    z-index: 1002;
+}
+.menu-mobile div {
+    width: 32px;
+    height: 2px;
+    background: var(--corbranca);
+    margin: 8px;
 }
 .inicio{
     display: flex;
@@ -101,7 +115,7 @@ header img:hover {
     background-color: rgb(211, 211, 0);
 }
 .inicio-introducao {
-    padding: 2em;
+    padding: 2em 0;
     margin: auto;
 }
 .sobre {
