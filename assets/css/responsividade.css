@@ -24,6 +24,9 @@
         max-width: 80vw;
         margin: auto;
     }
+    .div-divisoria {
+        width: 80vw;
+    }
 }
 @media (max-width: 755px){
     .container-sobre, .cards-testes {
@@ -56,19 +59,35 @@
     }
     .menu-mobile {
         display: block;
-        right: 0;
-    }
-    .ativo {
-        display: flex;
+        right: 10px;
+        top: 10px;
+        border-radius: 8px;
     }
     .remove-img{
         display: none;
     }
     .inicio {
-        height: 100vh;
+        height: calc(100vh - 48px);
     }
     .info-sobre h1, .info-sobre p {
         text-align: center;
+    }
+    .info-sobre p {
+        text-shadow: white 2px 2px 5px;
+    }
+    footer {
+        height: 4em;
+    }
+}
+@media (max-width: 350px) {
+    .inicio h1 {
+        font-size: 4rem;
+    }
+    .inicio p {
+        font-size: .8rem;
+    }
+    .imagem {
+        height: 15em;
     }
 }
 @media (orientation: portrait) {

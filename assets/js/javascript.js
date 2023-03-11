@@ -19,11 +19,20 @@ botaoFechar.addEventListener("click", () => {
 
 const botao = document.getElementById('botao-responsivo')
 const menu = document.querySelector("#menu")
+const item = document.querySelector(".lista")
 
 function ativamenu() {
-    menu.classList.toggle("ativo")
+    menu.style.display='flex'
+}
+
+function desativamenu() {
+    menu.style.display='none'
 }
 
 botao.addEventListener("click", ()=>{
     ativamenu()
+})
+
+item.addEventListener("click", ()=> {
+    desativamenu()
 })
