@@ -57,6 +57,9 @@
         position: fixed;
         z-index: 1001;
     }
+    .header-imgs {
+        margin-bottom: 50px;
+    }
     .menu-mobile {
         display: block;
         right: 10px;
@@ -73,7 +76,7 @@
         text-align: center;
     }
     .info-sobre p {
-        text-shadow: white 2px 2px 5px;
+        text-shadow: white 2px 2px 10px;
     }
     footer {
         height: 4em;
