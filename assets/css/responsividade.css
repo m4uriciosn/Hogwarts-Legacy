@@ -95,7 +95,7 @@
 }
 @media (orientation: portrait) {
     body{
-        background: black url(../img/HD\ wallpaper_\ Hogwarts\ Legacy\,\ video\ games\,\ dragon\,\ owl\,\ Harry\ Potter\,\ birds.jpeg) center center no-repeat fixed;
+        background: black url(../img/HD\ wallpaper_\ Hogwarts\ Legacy\,\ video\ games\,\ dragon\,\ owl\,\ Harry\ Potter\,\ birds.jpeg) center center no-repeat cover;
         background-size: 500vw;
     }
 }
