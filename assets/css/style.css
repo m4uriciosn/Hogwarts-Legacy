@@ -164,7 +164,6 @@ header img:hover {
     visibility: hidden;
     z-index: 1001;
 }
-
 .conteudo-modal {
     display: flex;
     justify-content: center;
@@ -174,7 +173,6 @@ header img:hover {
     border-radius: 5px;
     gap: 15px;
 }
-
 .fechar-modal{
     background-color: rgb(255, 255, 255);
     font-weight: bold;
@@ -184,13 +182,11 @@ header img:hover {
     cursor: pointer;
     border-radius: 10px;
 }
-
 .modal iframe {
     border-width: 0;
     width: 640px;
     height: 360px;
 }
-
 .modal.aberto {
     opacity: 1;
     visibility: visible;
@@ -281,7 +277,6 @@ footer {
     height: 2em;
 }
 footer p, footer a {
-    text-decoration: none;
     color: var(--corbranca);
     text-align: center;
     font-family: var(--fonte-aboreto);

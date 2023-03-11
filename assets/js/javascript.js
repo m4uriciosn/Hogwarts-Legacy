@@ -19,7 +19,7 @@ const botao = document.getElementById('botao-responsivo')
 const menu = document.querySelector("#menu")
 const item = document.querySelector(".lista")
 
-function ativamenu() {
+function toggleMenu() {
     if (menu.style.display=='flex') {
         menu.style.display='none'
     } else {
@@ -28,11 +28,13 @@ function ativamenu() {
 }
 
 function desativamenu() {
+    if (window.innerWidth <= 700) {
     menu.style.display='none'
+    }
 }
 
 botao.addEventListener("click", ()=>{
-    ativamenu()
+    toggleMenu()
 })
 
 item.addEventListener("click", ()=> {
@@ -40,7 +42,7 @@ item.addEventListener("click", ()=> {
 })
 
 function verificaMenu() {
-    if (menu.style.display='none' && window.innerWidth >= 700) {
+    if (menu.style.display=='none' && window.innerWidth >= 700) {
         menu.style.display='flex'
     }
 }
