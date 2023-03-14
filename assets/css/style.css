@@ -74,7 +74,7 @@ header img:hover {
     position: fixed;
     z-index: 1002;
 }
-.menu-mobile div {
+.menu-mobile .linha {
     width: 32px;
     height: 2px;
     background: var(--corbranca);
@@ -82,7 +82,7 @@ header img:hover {
     transform-origin: center;
     transition: all .5s ease-in-out;
 }
-.inicio{
+.inicio {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,7 +175,7 @@ header img:hover {
     border-radius: 5px;
     gap: 15px;
 }
-.fechar-modal{
+.fechar-modal {
     background-color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
@@ -211,11 +211,11 @@ header img:hover {
     justify-content: space-between;
     padding-bottom: 3em;
 }
-.card-hp{
+.card-hp {
     position: relative;
     max-width: var(--tamanho-img-cards);
 }
-.card-hp-div{
+.card-hp-div {
     position: relative;
     transition: all .5s;
 }

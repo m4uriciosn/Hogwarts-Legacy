@@ -2,6 +2,7 @@ const botaoTrailer = document.querySelector(".botao-trailer");
 const modal = document.querySelector(".modal");
 const video = document.querySelector('#video');
 const botaoFechar = document.querySelector('.fechar-modal');
+
 function AlternarModal() {
     modal.classList.toggle('aberto');
 }
@@ -18,11 +19,11 @@ botaoFechar.addEventListener("click", () => {
 const botao = document.getElementById('botao-responsivo')
 const menu = document.querySelector("#menu")
 const item = document.querySelector(".lista")
+const line1 = document.querySelector('.line1')
+const line2 = document.querySelector('.line2')
+const line3 = document.querySelector('.line3')
 
 function toggleMenu() {
-    const line1 = document.querySelector('.line1')
-    const line2 = document.querySelector('.line2')
-    const line3 = document.querySelector('.line3')
 
     if (menu.style.display=='flex') {
         menu.style.display='none'
@@ -42,6 +43,10 @@ function toggleMenu() {
 function desativamenu() {
     if (window.innerWidth <= 700) {
     menu.style.display='none'
+    botao.style.backgroundColor='black'
+    line1.style.transform='none'
+    line2.style.display='block'
+    line3.style.transform='none'
     }
 }
 
