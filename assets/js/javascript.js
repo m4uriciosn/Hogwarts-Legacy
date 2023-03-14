@@ -23,14 +23,17 @@ const line1 = document.querySelector('.line1')
 const line2 = document.querySelector('.line2')
 const line3 = document.querySelector('.line3')
 
-function toggleMenu() {
+function MenuPadrao() {
+    menu.style.display='none'
+    botao.style.backgroundColor='black'
+    line1.style.transform='none'
+    line2.style.display='block'
+    line3.style.transform='none'
+}
 
+function toggleMenu() {
     if (menu.style.display=='flex') {
-        menu.style.display='none'
-        botao.style.backgroundColor='black'
-        line1.style.transform='none'
-        line2.style.display='block'
-        line3.style.transform='none'
+        MenuPadrao()
     } else {
         menu.style.display='flex'
         botao.style.backgroundColor='grey'
@@ -42,11 +45,7 @@ function toggleMenu() {
 
 function desativamenu() {
     if (window.innerWidth <= 700) {
-    menu.style.display='none'
-    botao.style.backgroundColor='black'
-    line1.style.transform='none'
-    line2.style.display='block'
-    line3.style.transform='none'
+        MenuPadrao()
     }
 }
 
