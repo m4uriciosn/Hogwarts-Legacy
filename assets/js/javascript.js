@@ -20,10 +20,22 @@ const menu = document.querySelector("#menu")
 const item = document.querySelector(".lista")
 
 function toggleMenu() {
+    const line1 = document.querySelector('.line1')
+    const line2 = document.querySelector('.line2')
+    const line3 = document.querySelector('.line3')
+
     if (menu.style.display=='flex') {
         menu.style.display='none'
+        botao.style.backgroundColor='black'
+        line1.style.transform='none'
+        line2.style.display='block'
+        line3.style.transform='none'
     } else {
         menu.style.display='flex'
+        botao.style.backgroundColor='grey'
+        line1.style.transform='translateY(6px) rotate(-45deg)'
+        line2.style.display='none'
+        line3.style.transform='translateY(-6px) rotate(45deg)'
     }
 }
 

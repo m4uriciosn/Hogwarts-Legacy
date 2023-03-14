@@ -78,7 +78,9 @@ header img:hover {
     width: 32px;
     height: 2px;
     background: var(--corbranca);
-    margin: 8px;
+    margin: 10px;
+    transform-origin: center;
+    transition: all .5s ease-in-out;
 }
 .inicio{
     display: flex;
