@@ -49,13 +49,9 @@ function desativamenu() {
     }
 }
 
-botao.addEventListener("click", ()=>{
-    toggleMenu()
-})
+botao.addEventListener("click", ()=> toggleMenu() )
 
-item.addEventListener("click", ()=> {
-    desativamenu()
-})
+item.addEventListener("click", ()=> desativamenu() )
 
 function verificaMenu() {
     if (menu.style.display=='none' && window.innerWidth >= 700) {
